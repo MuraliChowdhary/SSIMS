@@ -6,4 +6,11 @@ const admin = zod.object({
 })
 
 
-module.exports = {admin}
+const validateUser =  zod.object({
+    username:zod.string().email().min(1),
+    role: zod.enum(['storemanager', 'assistantmanager','departmentmanager','inventorymanager','salesmanager','CSM','securitymanager','FinanceManager','HumanresourceManager','cashier'], "Invalid role"),
+
+})
+
+
+module.exports = {admin,validateUser}

@@ -1,21 +1,11 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-    employeeId:{
-        type:String,
-        required:true,
-        unique:true
-    },
     username: {
         type: String,
         required: true,
         unique: true
-    },
-    email: {
-        type: String,
-        required: true,
-        unique: true
-    },
+    },  
     role: {
         type: String,
         enum: ['admin', 'store_manager', 'cashier','salesmanager'],
