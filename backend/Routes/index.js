@@ -9,7 +9,8 @@ const SupplierRoutes = require("./SupplierRoutes");
 const salesRoutes = require("./SalesRoutes");
 const Notification = require("./Notification");
 const products = require("./products");
-
+const authRoutes = require("../Routes/authRoutes")
+app.use("/auth",authRoutes);
 app.use("/admin", adminRoutes);
 app.use("/user", userRoutes);
 app.use("/products", products);

@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const port =3000
+const port =3002
 const mongoose  =require("mongoose")
 const cors  = require("cors")
 
@@ -16,6 +16,7 @@ app.use("/api/v1",routes)
 
 
 app.listen(port,function(){
-    console.log("server is running on port 3000")
+    console.log("server is running on port 3002")
+   
 })
 
