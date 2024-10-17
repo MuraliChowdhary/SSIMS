@@ -35,16 +35,16 @@ export const Header = () => {
         <div className="flex space-x-6 items-center">
           <button className="font-bold">Primemart</button>
           <a href="#features" className="text-black hover:text-blue-700">
-            Features
+            Products
           </a>
           <a href="#about-us" className="text-black hover:text-blue-700">
-            About Us
+            Company
           </a>
           <a href="#pricing" className="text-black hover:text-blue-700">
-            Pricing
+            Resources
           </a>
           <a href="#contact-us" className="text-black hover:text-blue-700">
-            Contact Us
+            Pricing
           </a>
           <a href="#resources" className="text-black hover:text-blue-700">
             Resources

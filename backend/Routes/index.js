@@ -10,6 +10,7 @@ const salesRoutes = require("./SalesRoutes");
 const Notification = require("./Notification");
 const products = require("./products");
 const authRoutes = require("../Routes/authRoutes")
+const customerDashboard = require("../Routes/customerDashboard")
 app.use("/auth",authRoutes);
 app.use("/admin", adminRoutes);
 app.use("/user", userRoutes);
@@ -20,5 +21,5 @@ app.use("/SupplierRoutes", SupplierRoutes);
 // app.use("/Analytics",AnalyticsRoutes)
 app.use("/sales", salesRoutes);
 app.use("/Notification", Notification);
-
+app.use("/customer",customerDashboard);
 module.exports = app;

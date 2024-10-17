@@ -1,81 +1,102 @@
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
-  productID: {
-    type: String, 
-    required: true, 
+  productId: {
+    type: String,
+    required: true,
     unique: true
   },
   name: {
-    type: String, 
+    type: String,
     required: true
   },
   description: {
-    type: String
+    type: String,
+    required: false // make required false if you want to allow null
   },
   category: {
-    type: String, 
+    type: String,
     required: true
   },
   brand: {
-    type: String
+    type: String,
+    required: false // make required false if you want to allow null
   },
   price: {
-    type: Number, 
-    required: true
-  },
-  quantity:{
     type: Number,
     required: true
-    },
+  },
+  quantity: {
+    type: Number,
+    required: true
+  },
   unitOfMeasure: {
-    type: String, 
+    type: String,
     required: true,
-    enum: ['kg', 'litre', 'piece','pack','set']
+    enum: ['kg', 'litre', 'piece', 'pack', 'set']
   },
   barcode: {
-    type: String, 
+    type: String,
     required: true
   },
   currentStockQuantity: {
-    type: Number, 
+    type: Number,
     required: true
   },
   minimumStockLevel: {
-    type: Number, 
+    type: Number,
     required: true
   },
   expirationDate: {
-    type: Date
+    type: Date,
+    required: false // make required false if you want to allow null
   },
   supplierInformation: {
-    name: String,
-    contact: String
+    name: {
+      type: String,
+      required: false // make required false if you want to allow null
+    },
+    contact: {
+      type: String,
+      required: false // make required false if you want to allow null
+    }
   },
   locationInStore: {
-    aisle: String,
-    shelf: String
+    aisle: {
+      type: String,
+      required: false // make required false if you want to allow null
+    },
+    shelf: {
+      type: String,
+      required: false // make required false if you want to allow null
+    }
   },
   nutritionalInformation: {
-    type: String
+    type: String,
+    required: false // make required false if you want to allow null
   },
   allergenInformation: {
-    type: String
+    type: String,
+    required: false // make required false if you want to allow null
   },
   taxRate: {
-    type: Number
+    type: Number,
+    required: false // make required false if you want to allow null
   },
   discountInformation: {
     discountType: {
       type: String,
-      enum: ['percentage', 'fixed']
+      enum: ['percentage', 'fixed'],
+      required: false // make required false if you want to allow null
     },
     discountValue: {
-      type: Number
+      type: Number,
+      required: false // make required false if you want to allow null
     }
   },
   imageUrl: {
-    type: String
+    type: String,
+    required: false // make required false if you want to allow null
   }
 }, { timestamps: true });
 
