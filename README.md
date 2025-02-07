@@ -32,19 +32,16 @@ SmartStock aims to streamline supermarket operations by providing tools for inve
 ### Frontend:
 - React
 - React Router
-- Redux (optional for state management)
-- WebSocket
 
 ### Backend:
 - Node.js
 - Express
 - TypeScript
-- Postgresql
-- Prisma ORM
+- MongoDB
+- Mongoose
 
 ### Integration:
 - Python for advanced analytics
-- WebSocket for real-time updates
 
 ## Installation
 
@@ -57,8 +54,8 @@ SmartStock aims to streamline supermarket operations by providing tools for inve
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/Muralichowdhary/SmartStock.git
-    cd SmartStock
+    git clone https://github.com/Muralichowdhary/SSIMS.git
+    cd SSIMS
     ```
 
 2. **Install Backend Dependencies:**
