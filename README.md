@@ -38,8 +38,9 @@ SmartStock aims to streamline supermarket operations by providing tools for inve
 ### Backend:
 - Node.js
 - Express
-- MongoDB
-- Mongoose
+- TypeScript
+- Postgresql
+- Prisma ORM
 
 ### Integration:
 - Python for advanced analytics
